@@ -1,0 +1,8 @@
+cc_library(
+    name = "core_mapper_iface_lib",
+    hdrs = ["ICoreMapper.h"],
+    visibility = [
+        "//core_mapper:__pkg__",
+        "//core_ros:__pkg__",
+    ],
+)

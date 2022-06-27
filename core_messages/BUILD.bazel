@@ -1,0 +1,13 @@
+cc_library(
+    name = "core_messages",
+    hdrs = [
+        "Core.h",
+        "Light.h",
+        "v16/Core.h",
+    ],
+    visibility = [
+        "//converter_lib:__pkg__",
+        "//core_mapper:__pkg__",
+        "//core_ros:__pkg__",
+    ],
+)

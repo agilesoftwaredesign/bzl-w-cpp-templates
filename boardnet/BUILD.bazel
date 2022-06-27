@@ -1,0 +1,8 @@
+cc_library(
+    name = "boardnet_lib",
+    hdrs = [
+        "bn_rts.h",
+        "bn_light.h"
+    ],
+    visibility = ["//visibility:public"],
+)

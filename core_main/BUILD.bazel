@@ -1,0 +1,7 @@
+cc_binary(
+    name = "core_main",
+    srcs = ["main.cpp"],
+    deps = [
+        "//core_mapper:core_mapper_lib",
+    ],
+)

@@ -1,0 +1,17 @@
+cc_library(
+    name = "core_ros",
+    srcs = [
+        "rts_ros_mapper.cpp",
+        "light_ros_mapper.cpp"
+    ],
+    hdrs = [
+        "rts_ros_mapper.h",
+        "light_ros_mapper.h"
+    ],
+    deps = [
+        "//converter_lib:core_converter_lib",
+        "//core_messages:core_messages",
+        "//core_mapper_iface:core_mapper_iface_lib"
+    ],
+    visibility = ["//core_mapper:__pkg__"],
+)
